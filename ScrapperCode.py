@@ -143,13 +143,6 @@ class WebData:
     def InitiWebBaseData(self):
         try:
             url="https://www.screener.in/company/"+CompanyNameWhichWillHelpUsToMakeUrl[diffrenetCompanyCount]+"/consolidated/"
-            #url = "https://www.screener.in/company/BAJFINANCE/consolidated/"
-            #url = "https://www.screener.in/company/RELIANCE/consolidated/#quarters"
-            #url = "https://www.screener.in/company/TCS/consolidated/"
-            #url="https://www.screener.in/company/LICHSGFIN/consolidated/"
-            #url="https://www.screener.in/company/AXISBANK/consolidated/"
-            #url = "https://www.screener.in/company/BPCL/consolidated/"
-            #url="https://www.screener.in/company/ABB/"
             print("Search in excel: "+CompanyNameWhichWillHelpUsToMakeUrl[diffrenetCompanyCount]," ISIN: "
                 ,isinCodeWhichIsCommingFromFile[diffrenetCompanyCount],"\n")
             html = urlopen(url)
